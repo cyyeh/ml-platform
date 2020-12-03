@@ -1,6 +1,5 @@
 version: '3'
 services:
-
   postgres:
     build:
       context: components/postgres

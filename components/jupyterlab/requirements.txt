@@ -1,7 +1,7 @@
-tensorflow==2.3.1
 mlflow==1.12.1
 matplotlib
 jupyterlab
+tensorflow==2.3.1
 scikit-learn
 
 tfmpl

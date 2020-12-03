@@ -10,7 +10,7 @@ ARTIFACTS_DIR=artifacts
 
 # Notebook Environments.
 # -------------
-NOTEBOOK_WORKSPACE=/home/jovyan/work
+NOTEBOOK_WORKSPACE=/home/ai/work
 
 # Postgres Environments.
 # -------------
