@@ -11,10 +11,10 @@ RUN rm ./package.list
 # install python 3.7.9
 ENV TZ=Asia/Taipei
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apt install -y make build-essential libssl-dev zlib1g-dev \
+RUN apt-get install -y make build-essential libssl-dev zlib1g-dev \
     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
     libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl \
-    git
+    git && apt-get clean
 
 RUN useradd -ms /bin/bash ai
 USER ai
