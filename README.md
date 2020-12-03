@@ -29,6 +29,11 @@ It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL,
 └── platform_env.sh
 ```
 
+## Prerequisites
+
+- Install Docker
+- Install docker-compose
+
 ## Usage
 
 1. Add the training data under the `data` directory.
