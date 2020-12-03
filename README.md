@@ -34,7 +34,7 @@ It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL,
 1. Add the training data under the `data` directory.
 2. Add training scripts, notebooks under the `app` directory.
 3. Experiment artifacts would be stored under the `artifacts` directory.
-4. Database logs and Tensorboard logs would be stored under the `logs` directory
+4. Database logs and Tensorboard logs would be stored under the `logs` directory.
 5. You will find `makefile` to kick off the platform. It has three different commands to build, start, and stop platform.
 
 * To build platform
