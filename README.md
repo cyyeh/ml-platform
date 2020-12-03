@@ -72,14 +72,14 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
   
         make down
 
-* To visit JupyterLab type the following address on your favorite browser:
+* To visit JupyterLab, type the following address on your favorite browser:
         
         http://localhost:8888/
 
-* To visit TensorBoard type the following address on your favorite browser:
+* To visit TensorBoard, type the following address on your favorite browser:
     
         http://localhost:6006/
      
-* To visit Mlflow type the following address on your favorite browser:
+* To visit Mlflow, type the following address on your favorite browser:
     
         http://localhost:5000/
