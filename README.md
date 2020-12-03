@@ -31,8 +31,8 @@ It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL,
 
 ## Prerequisites
 
-- Install Docker
-- Install docker-compose
+- [Install Docker](https://docs.docker.com/engine/install/)
+- [Install docker-compose](https://docs.docker.com/compose/install/)
 
 ## Usage
 
