@@ -8,3 +8,4 @@ logs/postgres_storage
 logs/tensorboard
 app/*
 artifacts/*
+data/*
