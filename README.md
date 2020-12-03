@@ -2,8 +2,8 @@
 
 reference: https://github.com/erdiolmezogullari/ml-fmnist-mlflow-tensorboard
 
-In this case, we used docker container technologies to create ML platform from scratch.
-It is consists of four different docker containers (mlflow, jupyterlab, postgres, tensorboard) that are already built in `docker-compose.yml`
+In this case, we used docker container technologies to create the ML platform from scratch.
+It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL, TensorBoard) that are already built in `docker-compose.yml`
 
 ## Example Project Structure
 
