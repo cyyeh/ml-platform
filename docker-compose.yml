@@ -19,6 +19,7 @@ services:
       context: components/mlflow
       dockerfile: Dockerfile
     container_name: mlflow
+    restart: always
     expose:
       - ${MLFLOW_EXPOSE_PORT}
     ports:
@@ -36,6 +37,7 @@ services:
       context: components/jupyterlab
       dockerfile: Dockerfile
     container_name: jupyterlab
+    restart: always
     ports:
       - "8888:8888"
     depends_on:
@@ -60,6 +62,7 @@ services:
       context: components/tensorboard
       dockerfile: Dockerfile
     container_name: tensorboard
+    restart: always
     volumes:
       - ./${TENSORBOARD_LOGS_DIR}/:/${TENSORBOARD_LOGS_DIR}/
     ports:
