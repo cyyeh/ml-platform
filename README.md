@@ -83,3 +83,16 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
 * To visit Mlflow, type the following address on your favorite browser:
     
         http://localhost:5000/
+
+### Notes on docker image sizes
+
+- Before minimizing docker image sizes
+  - ml-platform_jupyterlab: 6.26GB
+  - ml-platform_mlflow: 1.15GB
+  - ml-platform_tensorboard: 1.47GB
+  - ml-platform_postgres: 159MB
+- After minimizing docker image sizes
+  - ml-platform_jupyterlab: 5.94GB
+  - ml-platform_mlflow: 1.15GB
+  - ml-platform_tensorboard: 1.47GB
+  - ml-platform_postgres: 159MB
