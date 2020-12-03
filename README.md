@@ -56,18 +56,22 @@ It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL,
 4. Database logs and Tensorboard logs would be stored under the `logs` directory.
 5. You will find `makefile` to kick off the platform. It has three different commands to build, start, and stop platform.
 
-* To build platform
+* To build the platform
 
         make build
     
-* To start platform
+* To start the platform
 
         make up
     
-* To stop platform
+* To stop the platform
 
+        make stop
+
+* To stop the platform and remove containers
+  
         make down
-        
+
 * To visit JupyterLab type the following address on your favorite browser:
         
         http://localhost:8888/
