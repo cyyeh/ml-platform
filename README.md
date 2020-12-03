@@ -33,7 +33,20 @@ It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL,
 
 - [Install Docker](https://docs.docker.com/engine/install/)
 - [Install docker-compose](https://docs.docker.com/compose/install/)
-- If you would like to use GPU, please install [nvidia-docker2](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit)
+- If you would like to use GPU, please install [nvidia-docker2](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit), and set nvidia as the default runtime
+  - add `"default-runtime": "nvidia"` to `/etc/docker/daemon.json` like this:
+  ```
+  {
+    "default-runtime": "nvidia",
+    "runtimes": {
+        "nvidia": {
+            "path": "/usr/bin/nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+  }
+  ```
+  - execute `sudo systemctl daemon-reload` and `sudo systemctl restart docker`
 
 ## Usage
 
