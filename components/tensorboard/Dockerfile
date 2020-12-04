@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.3.1
+FROM python:3.7.9-slim-stretch
 
 RUN pip install --upgrade pip
 
