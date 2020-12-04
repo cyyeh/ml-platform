@@ -90,9 +90,9 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
   - ml-platform_jupyterlab: 6.26GB
   - ml-platform_mlflow: 1.15GB
   - ml-platform_tensorboard: 1.47GB
-  - ml-platform_postgres: 159MB
+  - ml-platform_postgres: 0.16GB
 - After minimizing docker image sizes
-  - ml-platform_jupyterlab: 3.7GB
-  - ml-platform_mlflow: 1.09GB
-  - ml-platform_tensorboard: 217MB
-  - ml-platform_postgres: 159MB
+  - ml-platform_jupyterlab: 3.7GB(41% reduced)
+  - ml-platform_mlflow: 1.09GB(5% reduced)
+  - ml-platform_tensorboard: 0.21GB(86% reduced)
+  - ml-platform_postgres: 0.16GB(0% reduced)
