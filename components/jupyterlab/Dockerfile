@@ -28,7 +28,7 @@ RUN pyenv install 3.7.9 && pyenv global 3.7.9
 RUN pip install --upgrade pip
 
 COPY ./requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 USER root
 RUN rm requirements.txt
 USER ai
