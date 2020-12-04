@@ -1,6 +1,6 @@
 # ML Platform
 
-reference: https://github.com/erdiolmezogullari/ml-fmnist-mlflow-tensorboard
+idea credit: https://github.com/erdiolmezogullari/ml-fmnist-mlflow-tensorboard
 
 In this case, we used docker container technologies to create the ML platform from scratch.
 It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL, TensorBoard) that are already built in `docker-compose.yml`.
@@ -92,7 +92,7 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
   - ml-platform_tensorboard: 1.47GB
   - ml-platform_postgres: 0.16GB
 - After minimizing docker image sizes
-  - ml-platform_jupyterlab: 3.7GB(41% reduced)
+  - ml-platform_jupyterlab: 3.43GB(45% reduced)
   - ml-platform_mlflow: 1.09GB(5% reduced)
   - ml-platform_tensorboard: 0.21GB(86% reduced)
   - ml-platform_postgres: 0.16GB(0% reduced)
