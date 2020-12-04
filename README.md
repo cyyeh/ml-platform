@@ -6,30 +6,6 @@ In this case, we used docker container technologies to create the ML platform fr
 It consists of four different docker containers (MLflow, JupyterLab, PostgreSQL, TensorBoard) that are already built in `docker-compose.yml`.
 Now we installed TensorFlow2.3.1 in JupyterLab.
 
-## Example Project Structure
-
-```
-.
-├── README.md
-├── app
-│   ├── cifar10.ipynb
-│   └── train-cifar10.py
-├── artifacts
-├── components
-│   ├── jupyterlab
-│   ├── mlflow
-│   ├── postgres
-│   └── tensorboard
-├── data
-├── docker-compose.yml
-├── logs
-│   ├── postgres_storage
-│   └── tensorboard
-├── makefile
-├── platform.sh
-└── platform_env.sh
-```
-
 ## Prerequisites
 
 - [Install Docker](https://docs.docker.com/engine/install/)
@@ -56,14 +32,10 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
 3. Experiment artifacts would be stored under the `artifacts` directory.
 4. Database logs and Tensorboard logs would be stored under the `logs` directory.
 
-* To build the platform
-
-        make build
-    
 * To start the platform
 
         make up
-    
+
 * To stop the platform
 
         make stop
@@ -84,6 +56,34 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
     
         http://localhost:5000/
 
+* To build the platform(**only needed if you want to customize it**)
+
+        make build
+
+## Example Project Structure
+
+```
+.
+├── README.md
+├── app
+│   ├── cifar10.ipynb
+│   └── train-cifar10.py
+├── artifacts
+├── components
+│   ├── jupyterlab
+│   ├── mlflow
+│   ├── postgres
+│   └── tensorboard
+├── data
+├── docker-compose.yml
+├── logs
+│   ├── postgres_storage
+│   └── tensorboard
+├── makefile
+├── platform.sh
+└── platform_env.sh
+```
+
 ### Notes on docker image sizes
 
 - Before minimizing docker image sizes
@@ -92,7 +92,7 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
   - ml-platform_tensorboard: 1.47GB
   - ml-platform_postgres: 0.16GB
 - After minimizing docker image sizes
-  - ml-platform_jupyterlab: 3.43GB(45% reduced)
+  - ml-platform_jupyterlab: 3.7GB(41% reduced)
   - ml-platform_mlflow: 1.09GB(5% reduced)
   - ml-platform_tensorboard: 0.21GB(86% reduced)
   - ml-platform_postgres: 0.16GB(0% reduced)

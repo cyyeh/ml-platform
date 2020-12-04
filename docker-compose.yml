@@ -4,6 +4,7 @@ services:
     build:
       context: components/postgres
       dockerfile: Dockerfile
+    image: chihyuyeh/ml-platform:postgres-0.1.0
     container_name: postgres
     restart: always
     environment:
@@ -18,6 +19,7 @@ services:
     build:
       context: components/mlflow
       dockerfile: Dockerfile
+    image: chihyuyeh/ml-platform:mlflow-0.1.0
     container_name: mlflow
     restart: always
     expose:
@@ -36,6 +38,7 @@ services:
     build:
       context: components/jupyterlab
       dockerfile: Dockerfile
+    image: chihyuyeh/ml-platform:jupyterlab-0.1.0
     container_name: jupyterlab
     restart: always
     ports:
@@ -61,6 +64,7 @@ services:
     build:
       context: components/tensorboard
       dockerfile: Dockerfile
+    image: chihyuyeh/ml-platform:tensorboard-0.1.0
     container_name: tensorboard
     restart: always
     volumes:
