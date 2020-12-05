@@ -27,6 +27,8 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
 
 ## Usage
 
+**See [this example project](https://github.com/cyyeh/ml-platform-tutorials) for demonstration!**
+
 1. Add the training data under the `data` directory.
 2. Add training scripts, notebooks under the `app` directory.
 3. Experiment artifacts would be stored under the `artifacts` directory.
@@ -59,30 +61,6 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
 * To build the platform(**only needed if you want to customize it**), update the image tag for each service you would like to update in `docker-compose.yml` file and then:
 
         make up
-
-## Example Project Structure
-
-```
-.
-├── README.md
-├── app
-│   ├── cifar10.ipynb
-│   └── train-cifar10.py
-├── artifacts
-├── components
-│   ├── jupyterlab
-│   ├── mlflow
-│   ├── postgres
-│   └── tensorboard
-├── data
-├── docker-compose.yml
-├── logs
-│   ├── postgres_storage
-│   └── tensorboard
-├── makefile
-├── platform.sh
-└── platform_env.sh
-```
 
 ### Notes on docker image sizes(statistics based on 0.1.0 version)
 
