@@ -32,15 +32,15 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
 3. Experiment artifacts would be stored under the `artifacts` directory.
 4. Database logs and Tensorboard logs would be stored under the `logs` directory.
 
-* To start the platform
+* To start the platform(it will pull the latest images of the ml-platform from [Docker Hub](https://hub.docker.com/r/chihyuyeh/ml-platform)):
 
         make up
 
-* To stop the platform
+* To stop the platform:
 
         make stop
 
-* To stop the platform and remove containers
+* To stop the platform and remove containers:
   
         make down
 
@@ -56,9 +56,9 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
     
         http://localhost:5000/
 
-* To build the platform(**only needed if you want to customize it**)
+* To build the platform(**only needed if you want to customize it**), update the image tag for each service you would like to update in `docker-compose.yml` file and then:
 
-        make build
+        make up
 
 ## Example Project Structure
 
