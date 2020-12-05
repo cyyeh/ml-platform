@@ -1,0 +1,17 @@
+- 2020-12-6
+  - JupyterLab: 0.3.0
+    - Add [`tensorflow-determinism`](https://github.com/NVIDIA/framework-determinism) for GPU-determinism with TensorFlow for model reproducibility
+  - MLflow 0.1.0
+  - PostgreSQL: 0.1.0
+  - TensorBoard: 0.1.0
+- 2020-12-5
+  - JupyterLab: 0.2.0
+    - Add [`keras-tuner==1.0.2`](https://github.com/keras-team/keras-tuner) for hyperparameter tuning
+  - MLflow: 0.1.0
+  - PostgreSQL: 0.1.0
+  - TensorBoard: 0.1.0
+- 2020-12-4
+  - JupyterLab: 0.1.0
+  - MLflow: 0.1.0
+  - PostgreSQL: 0.1.0
+  - TensorBoard: 0.1.0
