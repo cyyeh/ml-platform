@@ -84,7 +84,7 @@ Now we installed TensorFlow2.3.1 in JupyterLab.
 └── platform_env.sh
 ```
 
-### Notes on docker image sizes
+### Notes on docker image sizes(statistics based on 0.1.0 version)
 
 - Before minimizing docker image sizes
   - ml-platform_jupyterlab: 6.26GB
