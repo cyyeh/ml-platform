@@ -4,8 +4,7 @@ venv
 .ipynb_checkpoints
 
 *.csv
-logs/postgres_storage
-logs/tensorboard
+logs/*
 app/*
 artifacts/*
 data/*
