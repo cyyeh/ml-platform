@@ -1,3 +1,9 @@
+- 2021-1-23
+  - JupyterLab: 0.4.0
+    - Node.js is installed for enabling JupyterLab extensions
+  - MLflow 0.1.0
+  - PostgreSQL: 0.1.0
+  - TensorBoard: 0.1.0
 - 2020-12-6
   - JupyterLab: 0.3.0
     - Add [`tensorflow-determinism`](https://github.com/NVIDIA/framework-determinism) for GPU-determinism with TensorFlow for model reproducibility
